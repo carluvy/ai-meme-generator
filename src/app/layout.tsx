@@ -22,9 +22,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body
-          // className="bg-gray-50 text-gray-700 font-sans">
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+          className="bg-gray-50 text-gray-700 font-sans">
+        {/*className={`${geistSans.variable} ${geistMono.variable} antialiased`}>*/}
         {children}
       <footer className="text-center p-4 text-gray-500">© 2025 MemeBot</footer>
       </body>
