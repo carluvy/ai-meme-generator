@@ -14,6 +14,8 @@ export async function uploadFile(file: File) {
     }
 
     if (!response.ok) {
+        console.log(response);
+        print();
         throw new Error("Upload failed");
     }
 
