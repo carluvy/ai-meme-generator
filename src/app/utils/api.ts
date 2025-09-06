@@ -3,7 +3,7 @@ export async function uploadFile(file: File) {
     formData.append("file", file)
 
 
-    const response = await fetch("https://esteele-funny-meme-generator.hf.space/api/v1/upload/", {
+    const response = await fetch("https://esteele-funny-meme-generator.hf.space/api/v1/upload", {
         method: "POST",
         body: formData,
     });
