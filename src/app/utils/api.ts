@@ -8,13 +8,16 @@ export async function uploadFile(file: File) {
         body: formData,
     });
 
+
+
+
      if (!response.ok) {
         console.log(response);
         print();
     }
 
     if (!response.ok) {
-        throw new Error(`Upload failed: ${response}`);
+        throw new Error(`Upload failed`);
     }
 
     return await response.json();
