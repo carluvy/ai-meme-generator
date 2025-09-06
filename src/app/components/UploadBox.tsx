@@ -24,6 +24,7 @@ export default function UploadBox() {
         try {
             setUploading(true);
             const res = await uploadFile(selectedFile);
+            console.log(`Server Response: ${res}`);
             setServerResponse(res);
         } catch (error) {
             console.error(error);
